@@ -36,168 +36,140 @@ Publish the website in the LocalHost.
 <html>
 
 <head>
-  <title>Book Cover</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color:white;
-    }
-
-    .book-cover {
-      width: 500px;
-      height: 700px;
-      background-color:black;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      margin: 50px auto;
-      position: relative;
-    }
-    
-    .book-cover .insight {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      font-size: 15px;
-      font-weight: bold;
-      color: azure;
-    }
-
-    .book-cover .line1
-    {
-      position: absolute;
-      top: 40px;
-      left: 10px;
-      width: 80px;
-    }
-    .book-cover .title1 {
-      position: absolute;
-      top: 180px;
-      left: 30px;
-      font-size: 32px;
-      font-weight: bold;
-      color:  white;
-    }
-    .book-cover .title2 {
-      position: absolute;
-      top: 260px;
-      left: 30px;
-      font-size: 22px;
-      font-weight: bold;
-      color:  white;
-    }
-
-    .book-cover .subtitle1 {
-      position: absolute;
-      top: 470px;
-      left: 20px;
-      font-size: 18px;
-      font-weight: bold;
-      color:  white;
-    }
-    .book-cover .subtitle2 {
-      position: absolute;
-      top: 530px;
-      left: 20px;
-      font-size: 10px;
-      font-weight: bold;
-      color: white;
-    }
-    .book-cover .subtitle3 {
-      position: absolute;
-      top: 560px;
-      left: 20px;
-      font-size: 10px;
-      font-weight: bold;
-      color: white;
-    }
-    .book-cover .line2
-    {
-      position: absolute;
-      top: 480px;
-      left: 20px;
-      width: 160px;
-    }
-    .book-cover .line3
-    {
-      position: absolute;
-      bottom:38px;
-      left: 20px;
-      width: 115px;
-    }
-
-
-    .book-cover .author {
-      position: absolute;
-      bottom: 25px;
-      left: 20px;
-      font-size: 18px;
-      color: whitesmoke;
-    }
-
-    .book-cover .number {
-      position: absolute;
-      bottom: 5px;
-      left: 20px;
-      font-size: 18px;
-      color: white;
-    }
-
-    .book-cover .end {
-      position: absolute;
-      bottom: 5px;
-      right: 50px;
-      font-size: 18px;
-      color: white;
-    }
-    .book-cover .mypic
-    {
-      position: relative;
-      top:550px;
-      left: 370px;
-      width : 8px;
-      height: 8px;
-      background-size:fit;
-    }
-
-
-    .book-cover .image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      position: absolute;
-      top:  0;
-      left: 10;
-    }
-  </style>
+    <title>Book Cover Design</title>
+    <style> 
+        .wrapper {
+            background-color: rgb(188, 217, 218);
+            height:100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .bookpage{
+            width: 400px;
+            height: 600px;
+            color: black;
+            padding: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-image:url(back.jpg) ;
+            background-size: cover;
+        }
+            
+        
+        .insight{
+            color: rgb(32, 99, 167);
+        
+        }
+        
+        
+        .hrstyle{
+            width: 100px;
+        }
+        .author{
+        
+            display: inline;
+            position: relative;
+            color: lightblue;
+            top: 270px;
+            font-family: Georgia;
+            font-size: medium;
+            padding-bottom: 20px;
+        }
+        .booktitle{
+            color: rgb(251, 50, 0);
+            font-family: 'Courier New', Courier, monospace, bold;
+            font-size: larger;
+            text-align: center;
+            position: relative;
+            top: 30px;
+        
+        }
+        .id {
+            width: 400px;
+            position: relative;
+            top: 280px;
+            
+        }
+        .pub{
+            color: rgb(20, 128, 128);
+            font-size: medium;
+            position: relative;
+            top: 235px;
+            left: 330px;
+        }
+        .ed{
+            color: rgb(28, 120, 120);
+            font-size: medium;
+            font-family: Verdana;
+            position: relative;
+            top: 190px;
+        
+        }
+        .subtitle{
+            color:gold(24, 38, 78);
+            font-family: unicorn;
+            font-size: larger;
+            position: relative;
+            top: 15px;
+        }
+        .subtitle2{
+            color: rgb(188, 204, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+            position: relative;
+            top: 250px;
+        }
+        .mypic{
+            position: relative;
+            top: 250px;
+            left: 300px;
+            width: 90px;
+            height: 80px;
+            background-size: contain;
+        }
+    </style>
 </head>
-
 <body>
-  <div class="book-cover">
-    <img src="back.jpg" alt="Book Cover Image" class="image">
-    <div class="insight">TOMORROW'S PROMISE, TODAY'S INNOVATION</div>
-    <div class="line1"><hr style="color:blanchedalmond"></div>
-    <div class="title1">A Modern way of Cooking</div>
-    <div class="title2">EMBRACING INNOVATION IN A CONNECTED WORLD</div>
-    <div class="subtitle1">Introduction to the field of cooking and covers a wide range of receipes around the world from india to advanced Italy
+    <div class="wrapper">
+        <div class="bookpage">
+            <div class="insight">
+                <b>SOFTWARE DEVELOPMENT</b>
+            </div>
+            <div class="hrstyle">
+                <hr style="color:blanchedalmond">
+            </div>
+            <div class="booktitle">
+                <h1><b>SOFTWARE DEVELOPMENT</b></h1></div>
+            <div class="subtitle">
+                 <b>Streamlining Software Development</b> 
+            <div class="subtitle2">
+                <b>>> Managing Code Changes Effectively</b><br>
+                <b>>> Bridging Development and Operations</b><br>
+                <b>>> Ensuring Software Quality</b><br>
+            </div>     
+            </div>
+            <div class="mypic">
+                <img src="c:\Users\admin\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\1F74A54F39B3123AD272CA0A06E7463F\WhatsApp Image 2024-04-18 at 14.08.34_dc8dd7be.jpg" width="100" height="100" >
+            </div>
+            <div class="id">
+                <hr style="color:rgb(42, 32, 176)">
+            </div>
+            <div class="author">
+               <p><b>AJITH KUMAR A (212223230009)</b></p>
+            </div>
+            <div class="pub">
+                SEC 27'
+            </div>
+        </div>
     </div>
-    <div class="line2"><hr style="color:blanchedalmond"></div>
-    <div class="subtitle2">COOKING EDITION</div>
-    <div class="subtitle3">BUILDING BRIDGES TO THE FUTURE OF EXPERIENCE</div>
-    <div class="line3"><hr style="color:blanchedalmond"></div>
-    <div class="mypic"><img src=myself.jpg width="120" height="120" ></div>
-    <div class="end">SEC</div>
-    <div class="number">8667239165</div>
-
-    <div class="author">AJITH KUMAR</div>
-
-  </div>
 </body>
-
 </html>
-
+    </html>    
 ```
 
 ## OUTPUT:
+![image](https://github.com/Ajith1413/cover/assets/139842524/72927cf9-b592-4e3a-a929-e5bbd528521c)
 
 
 
