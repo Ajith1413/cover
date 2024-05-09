@@ -31,138 +31,108 @@ Insert the images in their appropriate places.
 Publish the website in the LocalHost.
 
 ## PROGRAM:
-~~~
-Register number:212223230009
-Developed By: AJITHKUMAR A
-
+```
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
+        <title>INTERNET INFRASTRUCTURE</title>
+        <link rel="stylesheet" href="{% static 'css/index.css' %}">
+        <style>
+            body{
+    color:whitesmoke;
+    font-family: Helvetica, sans-serif;
+    background-color: #333
+}
 
-<head>
-    <title>ARITIFICIAL INTELLIGENCE</title>
-    <style>
-        .bookpage{
+.book{
+    width: 726px;
+    height:891px;
+    margin:auto;
+    position: relative;
+    background-image: url(Network-Infrastructure.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: bottom 0px center;
+}
+h1{
+    font-size:70px;
+    margin:60px;
+    margin-bottom:0px;
+}
+h3{
+    margin:0px 0px 90px 60px;
+    position: absolute;
+    bottom:0px;
+    font-size: xx-large;
+    font-weight:10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:whitesmoke
 
-            width: 400px;
-            height: 700px;
-            color:rgb(175, 50, 50);
-            margin-left: auto;
-            margin-right: auto;
-            padding: 20px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            background-image: url("background.jpeg");
+}
+h4{
+    font-size:20px;
+    margin:60px;
+   margin-top:10px;
+   width:430px;
+}
+#top{
+    border-bottom:2px solid white;
+    padding:100px 0px 5px 30px;
+}
+footer{
+    position: absolute;
+    bottom: 10px;
+    border-top:2px solid black;
+    padding-top:0px;
+    width:726px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.photo{
+            position: relative;
+            top: 170px;
+            left: 550px;
+            width: 120px;
+            height: 120px;
             background-size: cover;
         }
-            
-        
-        .insight{
-            color:rgb(5, 16, 16);
-        
-        }
-        
-        
-        .hrstyle{
-            width:100px;
-        }
-        .author{
-        
-            display: inline;
-            position: relative;
-            color:rgb(193, 111, 40);
-            top:190px;
-            
-            font-family:Georgia;
-            font-size: medium;
-        }
-        .booktitle{
-            color:rgb(14, 3, 9);
-            font-family: 'Times New Roman', Times, serif;
-            font-size: larger;
-            text-align: left;
-            position: relative;
-            top: 30px;
-        
-        }
-        .id {
-            width:400px;
-            position: relative;
-            top:180px;
-            
-        }
-        .pub{
-            color:rgb(8, 19, 19);
-            font-size: medium;
-            position: relative;
-            top:155px;
-            left:330px;
-        }
-        .ed{
-            color:rgb(28, 20, 141);
-            font-size: medium;
-            font-family: Verdana;
-            position:relative;
-            top:85px;
-        
-        }
-        .subtitle{
-            color:rgb(10, 11, 11);
-            font-family:unicorn;
-            font-size: large;
-            position: relative;
-            top:40px;
-        }
-        .mypic{
-            position: relative;
-            top: 135px;
-            left: 260px;
-            width: 90px;
-            height: 80px;
-            background-size:contain;
-        }
+#HASH {
+    display: flex;
+    justify-content: space-between;
+}
+  #HASH span{
+    margin:10px 0px 20px 60px;
+    font-size: xx-large;
+    font-weight: bold;
+  }
+  #end{
+    padding-right:60px;
+  }
         </style>
-        <title>Book Cover Page</title>
-        </head>
-        <body>
-        <div class="bookpage">
-            <div class="insight">
-                AI&DS
-            </div>
-            <div class="hrstyle">
-                <hr style="color:blanchedalmond">
-            </div>
-            <div class="booktitle">
-                <h1>A Better<br>Life</h1></div>
-            <div class="subtitle">
-                 BASICS OF AI
-            </div>
-            <div class="subtitle">
-                 Top seller of 2024<br><br><br><br><br><br>
-            </div>
-
-            <div class="mypic">
-                <img src="photo.jpg" width="100" height="120" >
-            </div>
-            <div class="id">
-                <hr style="color:blanchedalmond">
-            </div>
-            <div class="author">
-               <p><b>Akshai Khanna D (212223040010)</b></p>
-            </div>
-            <div class="pub">
-                SEC
-            </div>
-            <div class="ed">
-                <b>SPECIAL EDITION</b>
-            </div>
-        </div>
-        </body>
-        
-
+    </head>
+    <body>
+        <section class="book">
+            <br><br>
+        <span id="top">EXPERT INSIGHT &nbsp;&nbsp;&nbsp;</span>
+            <h1>INTERNET INFRASTRUCTURE</h1>
+            <h4>Networking,web Services, and Cloud Computing</h4>
+            <h3>Second Edition</h3>  
+            <footer>
+                <div id="HASH" class="blue-msg">
+                    <span>AJITH KUMAR</span>
+                    <span id="end"><u>SEC</u></span>
+                </div>
+            </footer>
+            <div class="photo">
+                <img src="c:\Users\admin\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\1F74A54F39B3123AD272CA0A06E7463F\WhatsApp Image 2024-04-18 at 14.08.35_8678d16f.jpg" width="150" height="170"alt="">
+            </div>  
+    </section>
+    </body>
 </html>
-~~~
+```
 
 ## OUTPUT:
-![image](https://github.com/Ajith1413/cover/assets/139842524/4c89fb45-cd01-43de-8c36-f3e333b83333)
+![image](https://github.com/Ajith1413/cover/assets/139842524/79b55b7e-00b6-47a5-9048-24a61b505744)
+
 
 
 ## RESULT:
